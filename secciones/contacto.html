@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2018/08/23/20/27/gym-3626589_1280.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>VivirFitness Contacto</title>
+</head>
+
+<body class="fondo">
+    <!-- HEADER -->
+    <header>
+        <div class="header-img">
+            <img src="../recursos/img/espalda.jpeg" alt="hombre de espalda">
+        </div>        
+        <!-- TITULO -->
+        <div class="header">
+            <h1>Vivir Fitness</h1>
+        </div>
+    </header>
+    <!-- BARRA NAVEGACION -->
+    <div class="container barra">
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="../index.html">Inicio</a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item text-white">
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="./blog.html">Interesante</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- MAIN -->
+    <main>
+        <section class="container">
+            <div class="row">
+                <!-- 1° COLUMNA -->
+                <div class="col-lg-6 col-sm-12">
+                    <h2>Necesitás ayuda o tenés dudas?</h2>
+                    <p>
+                        Si querés contactarte con nosotros podés hacerlo a través del siguiente formulario. Estaremos
+                        encantados de poder ayudarte en todo lo que esté a nuestra alcance.
+                    </p>
+                    <img src="../recursos/img/fitness.jpeg" alt="arnold_pensativo">
+                </div>
+                <!-- FORM CONTACTO -->
+                <div class="col-lg-6 col-sm-12">
+                    <section class="form">
+                        <form action="#" method="get">
+                            <div>
+                                <input type="text" placeholder="Nombres" name="nombres" class="fondoForm" required>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Apellido" name="apellido" class="fondoForm" required>
+                            </div>
+                            <div>
+                                <input type="number" placeholder="Edad" min="0" max="99" name="edad" class="fondoForm">
+                            </div>
+                            <div>
+                                <input type="email" name="email" placeholder="Email" required class="fondoForm">
+                            </div>
+                            <div>
+                                <label for="pais" class="fondoForm">País de residencia</label>
+                                <br><br>
+                                <select name="pais" class="fondoForm" required>
+                                    <option value="...">.............</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="PE">Perú</option>
+                                    <option value="CL">Chile</option>
+                                    <option value="VE">Venezuela</option>
+                                    <option value="BR">Brasil</option>
+                                    <option value="BO">Bolivia</option>
+                                </select>
+                            </div>
+                            <div class="sexo">
+                                <div>
+                                    <div>M</div>
+                                    <input type="radio" name="sexo" value="masculino">
+                                </div>
+                                <div>
+                                    <div>F</div>
+                                    <input type="radio" name="sexo" value="femenino">
+                                </div>
+                            </div>
+                            <div>
+                                <textarea name="mensaje" id="" cols="25" rows="10" placeholder="Dejanos tu comentario"
+                                    class="fondoForm"></textarea>
+                            </div>
+                            <div>
+                                <input type="submit" class="fondoForm">
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <h2 class="tituloFooter">Vivir Fitness</h2>
+                </div>
+                <div class="col-md-3 col-sm-12 servicios">
+                    <img src="../recursos/img/Entrega.svg" alt="mano entregando un paquete" class="img">
+                    <p>ENVIOS GRATIS A PARTIR <br> DE $ 15000 <a href="#">Conoce más...</a></p>
+                </div>
+                <div class="col-md-3 col-sm- 12 servicios">
+                    <img src="../recursos/img/Garantia.svg" alt="mano con el pulgar hacia arriba dentro de un escudo"
+                        class="img">
+                    <p>MAXIMA CALIDAD <br><a href="#">Conoce más...</a></p>
+                </div>
+                <div class="col-md-3 col-sm-12 servicios">
+                    <img src="../recursos/img/Medioambiente.svg" alt="manos sosteniendo el planeta" class="img">
+                    <p>SOSTENIBILIDAD <br><a href="#">Conoce más...</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <p class="derechos">2023 - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

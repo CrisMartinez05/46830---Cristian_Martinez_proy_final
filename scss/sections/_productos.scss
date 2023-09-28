@@ -1,0 +1,105 @@
+/* GRILLA PRODUCTOS */
+#productos .container {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: auto 70px 200px 200px;
+    grid-template-areas:
+        "Presentación Presentación Presentación"
+        "Información Suplementos Suplementos"
+        "Información prod-1 prod-2"
+        "Información prod-3 prod-4";
+}
+
+.presentación {
+    grid-area: Presentación;
+    padding: 10px;
+    text-align: justify;
+}
+
+.suplementos {
+    grid-area: Suplementos;
+    padding: 30px;
+    text-align: center;
+}
+
+.prod-1 {
+    grid-area: prod-1;
+    display: flex;
+    text-align: justify;
+    margin: 3px;
+    padding: 5px;
+
+}
+
+.prod-2 {
+    grid-area: prod-2;
+    display: flex;
+    text-align: justify;
+    margin: 3px;
+    padding: 5px;
+}
+
+.prod-3 {
+    grid-area: prod-3;
+    display: flex;
+    text-align: justify;
+    margin: 3px;
+    padding: 5px;
+}
+
+.prod-4 {
+    grid-area: prod-4;
+    display: flex;
+    text-align: justify;
+    margin: 3px;
+    padding: 5px;
+}
+
+.información {
+    grid-area: Información;
+    color: rgba(193, 243, 95, 0.84);
+    text-align: justify;
+    margin: 3px;
+    overflow: auto;
+}
+
+.descProd {
+    padding-left: 10px;
+    overflow: auto;
+}
+
+@media(max-width: 990px) {
+    
+    #productos .container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto 70px repeat(4, 200px);
+        grid-template-areas:
+            "Presentación Presentación"
+            "Información Suplementos"
+            "Información prod-1"
+            "Información prod-2"
+            "Información prod-3"
+            "Información prod-4";
+    }
+}
+
+@media(max-width: 550px) {
+    
+        #productos .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 70px repeat(4, 200px);
+        grid-template-areas:
+            "Presentación"
+            "Suplementos"
+            "prod-1"
+            "prod-2"
+            "prod-3"
+            "prod-4";
+    }
+
+    .información {
+        display: none;
+    }
+}
