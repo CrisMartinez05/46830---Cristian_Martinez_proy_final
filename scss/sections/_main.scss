@@ -9,7 +9,7 @@ h3 {
     font-family: "nombre";
     font-style: oblique;
     color: white;
-    padding-top: 20px;
+    // padding-top: 20px;
 }
 
 h6 {
@@ -54,13 +54,13 @@ section p {
     }
 
     100% {
-        transform: scale(1.1);
+        transform: scale(1.02);
     }
 }
 
 .escalado {
     width: 100%;
-    animation: escalarFoto 1s linear infinite;
+    animation: escalarFoto 0.3s linear infinite;
 }
 
 .embarazada {

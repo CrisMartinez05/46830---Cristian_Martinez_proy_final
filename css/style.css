@@ -3,6 +3,7 @@
   font-family: "nombre";
   src: url(../recursos/fonts/Syne-ExtraBold.ttf); }
 
+/* RESETEO */
 * {
   margin: 0;
   padding: 0;
@@ -61,12 +62,12 @@ div.container.barra {
   position: sticky;
   top: 0; }
   div.container.barra a {
-    transition: all 1s; }
-  div.container.barra a:hover {
-    background-color: rgba(98, 94, 94, 0.615);
-    border: 2px solid white;
-    border-radius: 5px;
-    transform: scale(1.08); }
+    transition: all 0.5s; }
+    div.container.barra a:hover {
+      background-color: rgba(98, 94, 94, 0.615);
+      border: 2px solid white;
+      border-radius: 5px;
+      transform: scale(1.02); }
   div.container.barra form.d-flex {
     flex-direction: row;
     border: none; }
@@ -80,8 +81,7 @@ h2 {
 h3 {
   font-family: "nombre";
   font-style: oblique;
-  color: white;
-  padding-top: 20px; }
+  color: white; }
 
 h6 {
   font-family: "nombre";
@@ -117,11 +117,11 @@ section p {
   0% {
     transform: scale(1); }
   100% {
-    transform: scale(1.1); } }
+    transform: scale(1.02); } }
 
 .escalado {
   width: 100%;
-  animation: escalarFoto 1s linear infinite; }
+  animation: escalarFoto 0.3s linear infinite; }
 
 .embarazada {
   width: 100%; }
